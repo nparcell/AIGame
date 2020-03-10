@@ -1,7 +1,6 @@
 "Niklaus Parcell"
 "Trying the blue square eats apple game"
 "Attempting to adapt code from AIGame2.py in to object-oriented code"
-"** Update - so in this version, I guess the main that was achieved was building a good object-oriented module for the code. What will come in later versions is one that will learn from its mistakes/fortunes. Onward!"
 
 import pygame 
 import numpy as np 
@@ -270,7 +269,7 @@ class learn():
 
 		return 1/(1+np.exp(-x))
 
-class Play():
+def Play(self):
 	crash = False 
 	while not crash:
 		for self.event in pygame.event.get():
@@ -302,5 +301,3 @@ class Play():
 		pygame.display.flip()
 		self.clock.tick(self.fps)
 
-if __name__ == "__main__": 
-	Play() 
